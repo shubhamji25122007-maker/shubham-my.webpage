@@ -211,3 +211,28 @@ h5{
     margin-left:5%;
     margin-top: 2px;
 }
+@media (max-width:480px) {
+    .container{
+        width: 100vw;
+            height: 50vh; 
+    }
+    #principle{
+        width:77vw;
+    }
+    .barcode{
+        width: 76vw;
+        margin-left: 21%;
+    }
+    #upper{
+        gap:0%;
+       
+
+    }
+    .photo{
+        width: 370px;
+        transform: translateX(12px);
+    }
+    .logo{
+        padding: 40px
+    }
+}
