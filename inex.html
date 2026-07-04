@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mishra Shubham | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#242a30",
+                        "primary-fixed-dim": "#b7c8de",
+                        "primary": "#041627",
+                        "on-tertiary-fixed-variant": "#41474e",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-primary-container": "#8192a7",
+                        "surface-dim": "#d8dadc",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "on-background": "#191c1e",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-primary-fixed": "#0b1d2d",
+                        "surface-bright": "#f7f9fb",
+                        "background": "#f7f9fb",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c1c7cf",
+                        "surface-variant": "#e0e3e5",
+                        "outline": "#74777d",
+                        "on-surface": "#191c1e",
+                        "surface-tint": "#4f6073",
+                        "on-secondary-fixed": "#111c2c",
+                        "error": "#ba1a1a",
+                        "primary-container": "#1a2b3c",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-fixed": "#dde3eb",
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed-variant": "#38485a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#8b9198",
+                        "surface-container-high": "#e6e8ea",
+                        "outline-variant": "#c4c6cd",
+                        "inverse-surface": "#2d3133",
+                        "primary-fixed": "#d2e4fb",
+                        "secondary-container": "#d5e0f7",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-surface-variant": "#44474c",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container": "#eceef0",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#0f161b",
+                        "secondary": "#545f72",
+                        "on-tertiary-fixed": "#161c22",
+                        "on-secondary-container": "#586377",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#b7c8de"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "item-gap": "16px",
+                        "container-max-width": "800px",
+                        "unit": "4px",
+                        "section-gap": "32px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["\"Source Serif 4\""],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-md": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+                        "headline-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg overflow-x-hidden">
+<!-- SideNavBar (Desktop Only) -->
+<aside class="hidden md:flex flex-col h-screen fixed left-0 py-gutter bg-surface-container-low border-r border-outline-variant w-64 z-50">
+<div class="px-6 mb-8">
+<div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-primary">
+<img alt="Mishra Shubham professional portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo9ShEUIVyWrGdxb0A2dkz8nVip9Bv6KQAyIEMOx9W3wFKjwNgriCL0etiBYayZarHxJIevi7lTU-N4aLNbYRxCZkJo2P2rndpkf1vFNGWuE-CCoEMUOKnQPdauqrjvB9cidFe2VY1WvnUiMEB4oyfWTeKfBZxFHHMv96Iw716pQgXeYzSNTvUu1U2tCLEr7sEzOxiBf9NTjGMnhPj2xnLplKSh8_qJMb4pw7TNyoK_G-5KC0MI4-WuRsmKRTHXodTpw"/>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary">Mishra Shubham</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">BCA 2nd Year Student</p>
+</div>
+<nav class="flex-grow">
+<ul class="space-y-1">
+<li><a class="flex items-center gap-3 px-6 py-3 text-primary font-bold border-l-4 border-primary hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#summary"><span class="material-symbols-outlined">person</span>Summary</a></li>
+<li><a class="flex items-center gap-3 px-6 py-3 text-on-surface-variant pl-6 hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#education"><span class="material-symbols-outlined">school</span>Education</a></li>
+<li><a class="flex items-center gap-3 px-6 py-3 text-on-surface-variant pl-6 hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#skills"><span class="material-symbols-outlined">code</span>Skills</a></li>
+<li><a class="flex items-center gap-3 px-6 py-3 text-on-surface-variant pl-6 hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#certifications"><span class="material-symbols-outlined">workspace_premium</span>Certifications</a></li>
+</ul>
+</nav>
+<div class="px-6 pt-4 border-t border-outline-variant">
+<a class="block w-full py-2 bg-primary text-on-primary text-center font-label-md text-label-md rounded-lg active:scale-95 transition-transform" href="mailto:contact@shubham.me">Contact Me</a>
+<div class="flex gap-4 mt-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">terminal</span></a>
+</div>
+</div>
+</aside>
+<!-- TopNavBar (Mobile Only) -->
+<header class="md:hidden sticky top-0 bg-surface border-b border-outline-variant z-50">
+<div class="flex justify-between items-center px-margin-mobile py-4 max-w-[800px] mx-auto">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Mishra Shubham</span>
+<button class="text-primary"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</header>
+<main class="md:ml-64 min-h-screen">
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col justify-center items-center text-center px-margin-mobile py-section-gap max-w-[800px] mx-auto reveal">
+<div class="relative mb-8">
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary-fixed-dim p-1">
+<img alt="Mishra Shubham" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxJZsua-LbWlIGx36-cYWgnuz8wO9tHRmGi_WBldgi6D363dq7OjQZRG1fh1w390rD5h_wPJ_jMD3WITAB1xZii9_YtNcbmqYWpSrwQZCsF8elj94DR7EiE0c5Ms4mEVXjQlPi9s1Sk-ar1214SRdasU5tjbjX2IvzWwndzFCuiLbWaXm38a_rSvOp9mVAOpRAaOiebJJ0eI_763YD9874wSPUVO-styOn6lL_2ZfyRYedWFRA_onTpI1YMNLmnF3HHA"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary p-3 rounded-full">
+<span class="material-symbols-outlined">code</span>
+</div>
+</div>
+<h2 class="font-headline-xl text-headline-xl mb-4 text-primary">Building the Future of Web.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
+                I'm <span class="font-bold text-primary">Mishra Shubham</span>, a BCA 2nd Year student and aspiring full-stack developer dedicated to creating efficient, modern, and accessible digital experiences.
+            </p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="px-8 py-3 bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:opacity-90 transition-opacity" href="#projects">View My Work</a>
+<a class="px-8 py-3 border border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-surface-container-high transition-colors" href="#contact">Contact Me</a>
+</div>
+</section>
+<!-- About/Summary Section -->
+<section class="py-section-gap px-margin-mobile border-t border-outline-variant max-w-[800px] mx-auto reveal" id="summary">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">person</span>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase tracking-wider">Professional Summary</h3>
+</div>
+<div class="border-l-2 border-primary pl-8 py-2">
+<p class="font-body-lg text-body-lg leading-relaxed text-on-surface">
+                    A detail-oriented and ambitious Bachelor of Computer Applications (BCA) student currently in the 2nd year. I possess a solid foundation in computer science principles and a growing expertise in modern web technologies. My goal is to leverage my academic knowledge and technical skills to solve complex problems and build impactful software solutions. I am committed to continuous learning and staying at the forefront of technological advancements.
+                </p>
+</div>
+</section>
+<!-- Experience/Projects Section -->
+<section class="py-section-gap px-margin-mobile max-w-[800px] mx-auto reveal" id="projects">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase tracking-wider">Technical Foundations</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-item-gap">
+<div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg hover:border-primary transition-colors group">
+<div class="mb-4 flex justify-between items-start">
+<span class="material-symbols-outlined text-primary-container group-hover:scale-110 transition-transform">database</span>
+<span class="font-label-sm text-label-sm px-2 py-1 bg-surface-container-high text-on-surface-variant rounded">Project</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-2">Data Structures in C</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Implementation of fundamental data structures like Linked Lists, Stacks, and Queues to optimize performance.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-label-sm font-label-sm px-2 py-1 bg-outline-variant/20 text-on-surface-variant rounded">C Programming</span>
+<span class="text-label-sm font-label-sm px-2 py-1 bg-outline-variant/20 text-on-surface-variant rounded">Algorithms</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg hover:border-primary transition-colors group">
+<div class="mb-4 flex justify-between items-start">
+<span class="material-symbols-outlined text-primary-container group-hover:scale-110 transition-transform">web</span>
+<span class="font-label-sm text-label-sm px-2 py-1 bg-surface-container-high text-on-surface-variant rounded">Project</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-2">Static Web Design</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Crafting pixel-perfect, responsive static websites focusing on structural integrity and semantic HTML.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-label-sm font-label-sm px-2 py-1 bg-outline-variant/20 text-on-surface-variant rounded">HTML5</span>
+<span class="text-label-sm font-label-sm px-2 py-1 bg-outline-variant/20 text-on-surface-variant rounded">CSS3</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills & Web Tech Section -->
+<section class="py-section-gap px-margin-mobile bg-surface-container-low max-w-full reveal" id="skills">
+<div class="max-w-[800px] mx-auto">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase tracking-wider">Expertise &amp; Technologies</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<h4 class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">Programming</h4>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-3 bg-surface border border-outline-variant rounded">
+<span class="font-body-lg text-body-lg text-on-surface">C Programming</span>
+<div class="flex gap-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface border border-outline-variant rounded">
+<span class="font-body-lg text-body-lg text-on-surface">Python</span>
+<div class="flex gap-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">Web Technologies</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-full">HTML5</span>
+<span class="px-4 py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-full">CSS3</span>
+<span class="px-4 py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-full">JavaScript</span>
+<span class="px-4 py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-full">Responsive Design</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full">Tailwind CSS</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full">Git/GitHub</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Certifications -->
+<section class="py-section-gap px-margin-mobile max-w-[800px] mx-auto reveal" id="education">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">school</span>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase tracking-wider">Academic Path</h3>
+</div>
+<div class="space-y-8">
+<!-- University -->
+<div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-outline-variant">
+<div class="absolute left-[-5px] top-0 w-[12px] h-[12px] rounded-full bg-primary"></div>
+<div class="mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">2023 - Present</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-primary">Bachelor of Computer Applications (BCA)</h4>
+<p class="font-body-lg text-body-lg text-on-surface">Veer Narmad South Gujarat University (VNSGU)</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">Current: 2nd Year Undergraduate Student</p>
+</div>
+<!-- Certifications -->
+<div class="pt-8" id="certifications">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<h4 class="font-headline-lg text-headline-lg text-primary">Certifications</h4>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-low border-l-4 border-primary rounded shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">psychology</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Generative AI Workshop</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">VNSGU Certification</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low border-l-4 border-primary rounded shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">description</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Google Docs Mastery</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">VNSGU Certification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-mobile bg-primary text-on-primary max-w-full reveal" id="contact">
+<div class="max-w-[800px] mx-auto text-center">
+<h3 class="font-headline-xl text-headline-xl mb-8">Let's Build Something Great Together</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-12">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl mb-2">mail</span>
+<p class="font-label-sm text-label-sm uppercase tracking-widest opacity-70">Email</p>
+<a class="font-body-lg text-body-lg hover:underline" href="mailto:contact@shubham.me">contact@shubham.me</a>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl mb-2">call</span>
+<p class="font-label-sm text-label-sm uppercase tracking-widest opacity-70">Phone</p>
+<p class="font-body-lg text-body-lg">+91 [Your Number]</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl mb-2">location_on</span>
+<p class="font-label-sm text-label-sm uppercase tracking-widest opacity-70">Location</p>
+<p class="font-body-lg text-body-lg">Gujarat, India</p>
+</div>
+</div>
+<div class="flex justify-center gap-6">
+<a class="p-4 rounded-full bg-white/10 hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="p-4 rounded-full bg-white/10 hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined">terminal</span>
+</a>
+</div>
+</div>
+</section>
+<footer class="w-full max-w-[800px] mx-auto py-item-gap px-margin-mobile flex flex-col md:flex-row justify-between items-center gap-4 border-t border-outline-variant">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-label-md text-label-md font-bold text-primary">Mishra Shubham</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-70">© 2024 Mishra Shubham. Built with Professional Precision.</p>
+</div>
+<div class="flex gap-6">
+<a class="font-label-sm text-label-sm text-secondary hover:underline" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-secondary hover:underline" href="#">Terms of Service</a>
+</div>
+</footer>
+</main>
+<script>
+        // Scroll Reveal Animation
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveal.getBoundingClientRect().top;
+                const revealPoint = 150;
+                if (revealTop < windowHeight - revealPoint) {
+                    reveal.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Sidebar Active State Logic
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('aside nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'border-l-4', 'border-primary');
+                link.classList.add('text-on-surface-variant', 'pl-6');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-primary', 'font-bold', 'border-l-4', 'border-primary');
+                    link.classList.remove('text-on-surface-variant', 'pl-6');
+                    link.classList.add('pl-4');
+                }
+            });
+        });
+    </script>
+</body></html>
